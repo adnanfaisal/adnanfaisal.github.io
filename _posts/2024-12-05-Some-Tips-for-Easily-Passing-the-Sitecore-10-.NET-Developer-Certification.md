@@ -1,4 +1,4 @@
-## Some tips for easily passing the Sitcore 10 .NET Developer Certification
+## Some tips for easily passing the Sitecore 10 .NET Developer Certification
 
 Last month I passed Sitecore 10 .NET Developer Certification Exam. Hurray! To be able to pass the exam, some web development experience with Sitecore is required.  In this post I will share some do's and don't for passing this certification like a charm!
 
