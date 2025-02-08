@@ -1,0 +1,39 @@
+## Azure Entra ID integration with Sitecore - Bits and Bytes
+
+There are plenty of articles you can find online where it described step by step how Azure AD (now Azure Entra ID) can be integrated to enable Sitecore CM login. For example, [this one by SitecoreDude](https://sitecoredude.com/how-to-integrate-azure-ad-with-sitecore-content-management-in-10-easy-steps/), [this one by Fishtank](https://www.getfishtank.com/insights/configuring-azure-ad-authentication-with-sitecore), or if you like a deeper look then [this one by Merkle](https://sitecore.merkle.com/sitecore-identity-server-in-a-nutshell/). There are some great video walkhthroghs too, such as [this by Techshare](https://youtu.be/0FfdO9-Q-Co?si=hnogEBORwKVikIuA), or for a deeper look you can check [this by Sitecore Usergroup Poland](https://youtu.be/Vc9SeMDgNa4?si=WjYC1GCAmOIIdObh). 
+
+But still, if you actually want to replace the standard login with Entra ID, you may face some other questions and challeneges. In this article, I will write about some of those questions. The answers most of the time I collected from various sources an putting together so that one can find them easily. 
+
+## Signing up for Azure Entra ID trial account without a credit card
+When you will try to sign up for Azure Entra ID (just google about "Entra ID free accoung signup" to get a link), you'll see that your credit card inforamtion is required. But, when the credit card info page will come, just close that page and then if you then try to login to 
+
+## Claims not getting mapped 
+
+
+## Writing custom external user builder 
+
+## How to patch the identity server configs 
+
+
+## Disable unwanted user creation in Sitecore
+When a user logs in to Sitecore CM server using Azure AD / Entra ID, a popular choice is to persist the users in the database. This is useful in contrast to using virtual users. Virtual users are not saved in the database, as a result it would be hard to track who performed which activities later. But, if you are using persistent user, the problem is that you may not want to create a persistent user in Sitecore for every user you have in Entra ID. Your company may have 1000+ employees, but there may be only 50 users who use Sitecore CM. You will not like to pollute your user accounts when an unwanted user would try to login to the CM server. OK, if you did not do claim transformation for the roles of this user's AD group, he won't be able to actually enter the CM backend, but still, a user account will be created in the database. How can you stop this unwanted user creation? 
+You can do this from Entra ID. For the corresponding application, choose "Assignment Required" to "yes" and then assign the app to the required groups and users. 
+Details can be found [here](c:\Users\adnan\AppData\Local\Packages\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\TempState\ScreenClip\{8105DA1A-1313-49FC-B998-E9EC9641F215}.png)
+
+![Setting "Assignment Required" to "yes"](../_includes/azure_ad_assignment_required.png)
+
+
+
+
+
+## Disabling standard login 
+
+
+
+Following these tips will increase your chances of landing your dream job. I wish you the best of luck in your next career move! 🎉
+
+
+## Getting all users in all roles 
+
+
+I hope you've found this article useful. Happy Azure Entra ID integration!
