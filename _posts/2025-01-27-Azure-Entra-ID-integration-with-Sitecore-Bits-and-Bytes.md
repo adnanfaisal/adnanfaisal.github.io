@@ -53,7 +53,7 @@ How can you stop this unwanted user creation?
 You can do this from Entra ID. For the corresponding application, choose "Assignment Required" to "yes" and then assign the app to the required groups and users. 
 Details can be found [here](c:\Users\adnan\AppData\Local\Packages\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\TempState\ScreenClip\{8105DA1A-1313-49FC-B998-E9EC9641F215}.png)
 
-![Setting "Assignment Required" to "yes"](../docs/assets/images/azure_ad_assignment_required.png)
+![Setting "Assignment Required" to "yes"](/docs/assets/images/azure_ad_assignment_required.png)
 
 
 ## Disabling standard login 
